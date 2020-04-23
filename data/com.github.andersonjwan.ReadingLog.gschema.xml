@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="reading-log">
+	<schema id="com.github.andersonjwan.ReadingLog" path="/com/github/andersonjwan/ReadingLog/">
+	</schema>
+</schemalist>

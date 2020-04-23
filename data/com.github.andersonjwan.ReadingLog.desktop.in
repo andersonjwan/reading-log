@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=reading-log
+Exec=reading-log
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

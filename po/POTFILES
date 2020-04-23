@@ -1,0 +1,7 @@
+data/com.github.andersonjwan.ReadingLog.desktop.in
+data/com.github.andersonjwan.ReadingLog.appdata.xml.in
+data/com.github.andersonjwan.ReadingLog.gschema.xml
+src/reading_log-window.ui
+src/main.c
+src/reading_log-window.c
+
