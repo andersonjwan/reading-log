@@ -11,7 +11,7 @@ reading_log_deps = [
 gnome = import('gnome')
 
 reading_log_sources += gnome.compile_resources('reading_log-resources',
-  'reading_log.gresource.xml',
+  'main.gresource.xml',
   c_name: 'reading_log'
 )
 
