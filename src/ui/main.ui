@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="image-books-symbolic">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">emblem-documents-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkImage" id="image-menu-symbolic">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">open-menu-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <template class="ReadingLogWindow" parent="GtkApplicationWindow">
+    <property name="width_request">-1</property>
+    <property name="height_request">-1</property>
+    <property name="can_focus">False</property>
+    <property name="border_width">10</property>
+    <property name="default_width">640</property>
+    <property name="default_height">480</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="main-header">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="title" translatable="yes">Reading Log</property>
+        <property name="subtitle" translatable="yes">v1.0</property>
+        <property name="show_close_button">True</property>
+        <child>
+          <object class="GtkStackSwitcher" id="main-stack-switch">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon_size">0</property>
+            <property name="stack">main-stack</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="header-button-menu">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">image-menu-symbolic</property>
+            <property name="always_show_image">True</property>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="header-button-book-selection">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">image-books-symbolic</property>
+            <property name="always_show_image">True</property>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkStack" id="main-stack">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="name">stack-log</property>
+            <property name="title" translatable="yes">Log</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="name">stack-book</property>
+            <property name="title" translatable="yes">Book</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
